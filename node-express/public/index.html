@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+        <script src="js/script.js"></script>
+        <title>Node-kurs</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Maгазин</h1>
+            <div class="search">
+                <div class="block_in_search">
+                    <input type="text" placeholder="Поиск" class="input_search" />
+                    <button class="serch-button"></button>
+                </div>
+            </div>
+            <div class="profil">
+                <div class="profil_block">
+                    <i class="bi bi-person-circle" style="color: black; font-size: 2.5rem"></i>
+                </div>
+                <div class="profil_text">
+                    <span class="registration">Войти</span>
+                    <span class="profile_span">Профиль</span>
+                </div>
+            </div>
+            <div class="comparison">
+                <img src="img/comparison.png" alt="" style="width: 100%; height: 55%" />
+            </div>
+            <div class="favourites" style="margin-left: 50px">
+                <img src="img/favourites.jpg" alt="" style="width: 100%; height: 55%" />
+            </div>
+            <div class="basket">
+                <div class="basket_img"></div>
+                <div class="basket_text">Корзина</div>
+            </div>
+        </header>
+        <main class="main">
+            <h2>Мобильные телефоны | смартфоны</h2>
+            <div class="in_main">
+                <section>
+                    <div class="block">Фильтр по параметрам</div>
+                    <div class="price">
+                        <div class="price_text">Цена</div>
+                        <div class="price_param">
+                            <input type="number" placeholder="0" class="price_input" value="0" />
+                            <span class="divider"></span>
+                            <input type="number" placeholder="7000" class="price_input" value="7000" />
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <div class="brand_text">Бренд</div>
+                        <div class="brand_check">
+                            <div>
+                                <input type="checkbox" name="brand1" />
+                                <label for="brand1" class="brand_input">Samsung</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand2" />
+                                <label for="brand2" class="brand_input">Apple</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand3" />
+                                <label for="brand3" class="brand_input">Xiaomi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand4" />
+                                <label for="brand6" class="brand_input">Honor</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand7" />
+                                <label for="brand4" class="brand_input">Realmi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand6" />
+                                <label for="brand7" class="brand_input">Poco</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand8" />
+                                <label for="brand8" class="brand_input">Huawei</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="brand9" />
+                                <label for="brand9" class="brand_input">Vivo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="storage">
+                        <div class="storage_text">Память</div>
+                        <div class="storage_param">
+                            <input type="number" class="storage_input" value="1" />
+                            <span class="divider"></span>
+                            <input type="number" class="storage_input" value="512" />
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="date_text">Дата выхода на рынок</div>
+                        <div class="date_param">
+                            <input type="number" class="date_input" value="2015" />
+                            <span class="divider"></span>
+                            <input type="number" class="date_input" value="2023" />
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand('apple')">
+                        <img class="img_brand" src="img/apple.jpg" />
+                        <h3>Apple</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/samsung.webp" />
+                        <h3>Samsung</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/honor.webp" />
+                        <h3>Honor</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/realme.webp" />
+                        <h3>Realme</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/poco.webp" />
+                        <h3>Poco</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/vivo.webp" />
+                        <h3>Vivo</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/xiaomi.webp" />
+                        <h3>Xiaomi</h3>
+                    </div>
+                    <div class="main_brand_block" onclick="getSmartphoneByBrand()">
+                        <img class="img_brand" src="img/huawei.webp" />
+                        <h3>Huawei</h3>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </body>
+</html>
